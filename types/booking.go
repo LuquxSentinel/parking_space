@@ -20,6 +20,12 @@ type Booking struct {
 	QRCode    string             `bson:"qr_code"`
 }
 
+type CreateBookingData struct {
+	From   string `json:"from"`
+	To     string `json:"to"`
+	ParkID string `json:"park_id"`
+}
+
 type Payment struct {
 	ID            primitive.ObjectID `bson:"_id"`
 	PaymentID     string             `bson:"payment_id"`
